@@ -12,10 +12,10 @@ st.set_page_config(page_title="FitFeast", layout="wide")
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = 0
 
-login_pg = st.Page("UI/Login.py", title="Login")
+login_pg = st.Page("Login.py", title="Login")
 dash = st.Page("UI/dashboard.py", title="Dashboard")
-register = st.Page("UI/register.py", title="Register")
-main_pg = st.Page("UI/main.py", title="Main")
+register = st.Page("register.py", title="Register")
+main_pg = st.Page("main.py", title="Main")
 
 if st.session_state.logged_in == 0:
     show_dashboard()
