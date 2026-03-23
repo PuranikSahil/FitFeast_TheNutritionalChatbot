@@ -16,7 +16,7 @@ from GroQ import GroQ
 #_________________________"""
 
 def show_main():
-    api_key = GroQ
+    api_key = st.secrets["GROQ_API_KEY"]
     st.markdown(
                 """
                 <style>
